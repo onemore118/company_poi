@@ -11,3 +11,6 @@ CHINESE_FONT_PATH=本地中文字体的路径 如'C:\\Windows\\Fonts\\simsun.ttc
 
 ## 经纬度科普
 https://blog.csdn.net/diandianxiyu_geek/article/details/126713942
+
+## 备注
+后来发现企查查其实有可拖拽查看企业的功能，而且筛选维度更丰富，效果更好
