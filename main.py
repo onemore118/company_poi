@@ -116,8 +116,9 @@ def draw_by_folium():
                    attr='高德-中英文对照',
                    zoom_start=13)
 
-    # 读取excel,取location这一类，将数据格式化为lons和lats,同时将name设为label
-    df = pd.read_excel("poi_data.xlsx")
+    # 读取csv,取location这一类，将数据格式化为lons和lats,同时将name设为label
+    df = pd.read_csv("./GBK/广州市_公司企业_20220602_041919.csv", encoding='utf-8')
+    df = df[(df["小类"] == "网络科技") & (df["adcode"] == 440106)]
     lons = df["location"].str.split(",", expand=True)[0].astype(float)
     lats = df["location"].str.split(",", expand=True)[1].astype(float)
     labels = df["name"]
@@ -134,3 +135,4 @@ if __name__ == '__main__':
     # get_poi_data()
     # draw()
     draw_by_folium()
+
