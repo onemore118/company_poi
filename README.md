@@ -1,7 +1,7 @@
 ## 项目说明
 通过高德web api key 获取公司地址，然后通过folium绘制可交互地图
 
-实例如下
+## 示例
 
 ![demo](https://raw.githubusercontent.com/onemore118/company_poi/ec1ee7f63f511a5ebed00dfb9a89bc79eca388c2/assets/demo.png)
 
